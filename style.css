@@ -1,0 +1,47 @@
+body {
+  margin:0;
+  background:black;
+  color:white;
+  font-family: Georgia, serif;
+  overflow-x:hidden;
+}
+
+.scene {
+  display:none;
+}
+
+.scene.active {
+  display:block;
+}
+
+section {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hidden {
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1.5s ease;
+}
+
+.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+img {
+  max-width:80%;
+  filter:brightness(60%);
+}
+
+a {
+  color:#c33;
+  font-size:1.4rem;
+  text-decoration:none;
+}
+

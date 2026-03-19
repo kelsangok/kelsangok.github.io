@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>WHAT IS INFORMATION</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<section>
+  <h1 class="hidden">Impressum</h1>
+</section>
+
+<section>
+  <p class="hidden"> This website was created for the lecture "Digitales Publizieren und Multimediasysteme" at the University of Applied Sciences of the Grisons. <br>
+	All contents are fiction and there is no entity watching you... </p>
+</section>
+
+<section>
+  <p class="hidden"> for now. </p>
+</section>
+
+<section>
+  <p class="hidden"> 
+	Text: Kelsang O'Kerwin <br>
+	Website: Kelsang O'Kerwin <br>
+	Audio: x <br>
+	Pictures: x </p>
+</section>
+
+
+<section>
+  <div class="hidden">
+    <p>Go back?</p>
+    <a href="index.htm">Yes.</a>
+  </div>
+</section>
+
+<script>
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".hidden").forEach(el=>{
+  observer.observe(el);
+});
+</script>
+
+</body>
+
+</html>
