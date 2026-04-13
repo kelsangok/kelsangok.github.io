@@ -52,8 +52,9 @@ a {
 }
 
 .video-wrapper video {
-  width: 80%;
-  max-width: 900px;
+  max-height: 90vh;
+  max-width: 90vw;
+  width: auto;
   height: auto;
   display: block;
 }
